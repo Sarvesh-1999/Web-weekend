@@ -40,63 +40,63 @@
       </tfoot>
     </table> -->
 
-    
+    <fieldset>
+        <legend>Fill this form</legend>
+
     <form>
+      <input type="reset" />
 
-          <input type="reset">
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+      <br />
+      <input type="email" placeholder="Email" />
+      <br />
+      <input type="password" placeholder="Password"
+      pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"">
+      <br />
+      <input type="tel" maxlength="10" minlength="10" placeholder="Phone no" />
+      <br />
 
-        <label for="username">Username</label>
-        <input type="text" id="username" required>
-        <br>
-        <input type="email" placeholder="Email">
-        <br>
-        <input type="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"">
-        <br>
-        <input type="tel" maxlength="10" minlength="10" placeholder="Phone no">
-        <br>
-        
-        <select>
-            <option value="+91">+91</option>
-            <option value="+45">+45</option>
-            <option value="+89">+89</option>
-            <option value="+01">+01</option>
-        </select>
+      <select>
+        <option value="+91">+91</option>
+        <option value="+45">+45</option>
+        <option value="+89">+89</option>
+        <option value="+01">+01</option>
+      </select>
 
-        <br>
+      <br />
 
-        <label for="gender">Gender</label>
+      <label for="gender">Gender</label>
 
-        <input type="radio" name="gender" value="male"> male 
+      <input type="radio" name="gender" value="male" /> male
 
-        <input type="radio" name="gender" value="female"> female
+      <input type="radio" name="gender" value="female" /> female
 
-        <br>
+      <br />
 
-        <label for="class">Class</label>
+      <label for="class">Class</label>
 
-        <input type="radio" name="class" value="mern"> MERN 
+      <input type="radio" name="class" value="mern" /> MERN
 
-        <input type="radio" name="class" value="java"> JAVA
+      <input type="radio" name="class" value="java" /> JAVA
 
-        <br>
+      <br />
 
-        <label for="hobbies">Hobbies :</label>
-        <input type="checkbox" value="coding"> coding
-        <input type="checkbox" value="gaming"> gaming
-        <input type="checkbox" value="football"> football
+      <label for="hobbies">Hobbies :</label>
+      <input type="checkbox" value="coding" /> coding
+      <input type="checkbox" value="gaming" /> gaming
+      <input type="checkbox" value="football" /> football
 
-        <br>
+      <br />
 
-        <input type="file" multiple>
+      <input type="file" multiple />
 
-        <br>
+      <br />
 
-
-
-        <button>Submit</button>
-      
+      <button>Submit</button>
     </form>
 
+    </fieldset>
 
-</body>
+  </body>
 </html>
