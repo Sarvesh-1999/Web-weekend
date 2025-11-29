@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: green;
+      }
+      h1::after {
+        content: " ByeBye";
+      }
+      h1::before {
+        content: "ByeBye ";
+      }
+      p::selection {
+        background-color: black;
+        color: white;
+      }
+
+      .list1 > li::marker {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element Selectors ::</h1>
+
+    <!-- 
+    ::first-line
+    ::first-letter
+    ::after
+    ::before
+    ::selection
+    ::marker
+    -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam, quo
+      blanditiis maiores porro voluptas non? Sequi, odio accusantium officia
+      suscipit rerum voluptatum magni a consequuntur expedita veritatis
+      obcaecati aspernatur, cupiditate, maiores reiciendis modi dignissimos?
+      Porro et voluptate aliquam repellendus quidem voluptas, sunt dolor odio
+      corporis sint minus esse incidunt temporibus natus. Rem accusamus
+      doloribus blanditiis voluptatum autem voluptates animi distinctio vero,
+      sequi, nam saepe illum soluta molestiae perspiciatis ea quos deserunt,
+      quidem sed in? Animi qui unde nobis facere ad optio neque eos deleniti
+      distinctio, explicabo saepe perferendis? Labore non magnam sunt doloribus
+      repudiandae deleniti, maxime facere ipsam voluptatum.
+    </p>
+
+    <ol class="list1">
+      <li>HTML</li>
+      <li>HTML</li>
+      <li>HTML</li>
+    </ol>
+  </body>
+</html>
